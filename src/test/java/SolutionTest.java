@@ -31,4 +31,14 @@ public class SolutionTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void maxConsecutiveAnswersTest4() {
+        String answerKey = "FTFFTFTFTTFTTFTTFFTTFFTTTTTFTTTFTFFTTFFFFFTTTTFTTTTTTTTTFTTFFTTFTFFTTTFFFFFTTTFFTTTTFTFTFFTTFTTTTTTF";
+        int k = 32;
+        int expected = 85;
+        int actual = new Solution().maxConsecutiveAnswers(answerKey, k);
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
